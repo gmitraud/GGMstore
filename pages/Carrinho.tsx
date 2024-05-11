@@ -158,7 +158,7 @@ interface Props {
 
 const Carrinho: React.FC<Props> = ({ cartItems, increaseQuantity, decreaseQuantity, removeFromCart, onClose, isOpen }) => {
   const calculateTotalCost = () => {
-    if (!cartItems) return 0;
+    if (!cartItems || cartItems.length === 0) return 0;
     return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
   };
 
