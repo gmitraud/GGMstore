@@ -157,10 +157,10 @@ interface Props {
 }
 
 const Carrinho: React.FC<Props> = ({ cartItems, increaseQuantity, decreaseQuantity, removeFromCart, onClose, isOpen }) => {
-  if (!cartItems) return null; // Retorna null se cartItems for null ou undefined
+  if (!cartItems) return null;
 
   const calculateTotalCost = () => {
-    if (cartItems.length === 0) return 0; // Retorna 0 se cartItems estiver vazio
+    if (cartItems.length === 0) return 0;
     return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
   };
 
