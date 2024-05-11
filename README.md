@@ -1,10 +1,17 @@
+------------------------------GGM STORE-----------------------------------
+I developed this project using Next.js to consume an API and display a list of products in a simple online store interface.
 
-This is a simple store page that gathered its products by consuming an API.
+The store includes a cart feature that dynamically updates the price and quantity of products added. It's common for customers to adjust their cart contents, adding and removing products to compare prices, take advantage of sales, and make informed purchasing decisions. If a product's quantity in the cart reaches zero, its cost is automatically removed. However, customers can easily re-add it by clicking the "Increase" button, eliminating the need to search for the product again.
 
-You can run via:
+To run the project locally, follow these steps:
 
-npm run dev
+- Clone or download the repository.
+- Navigate to the project directory in your terminal.
+- Run the command npm install to install dependencies.
+- Run the command npm run dev.
+- Open http://localhost:3000 in your web browser to view the application.
 
-Then, open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Additionally, the project is deployed on Heroku. 
+- You can access it live at: https://vast-everglades-71916-91c777d5d121.herokuapp.com/
 
-I'll be uploading this website to Heroku App.
+Feel free to explore the store and its features!
