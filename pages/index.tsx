@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import useProducts from '../hooks/useProducts';
 import Carrinho from './Carrinho';
-import * as S from './styles';
+import * as S from '../public/styles';
 
 interface Product {
   id: number;
